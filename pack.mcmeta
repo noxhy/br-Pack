@@ -4,16 +4,6 @@
         "min_format": 75,
         "max_format": 75,
         "description": "by Noah, pixlii, Francidium, Floophead + endersaltz"
-    },
-
-    "overlays": {
-        "entries": [
-            {
-                "min_format": 75,
-                "max_format": 75,
-                "directory": "overlay_18"
-            }
-        ]
     }
 
 }
