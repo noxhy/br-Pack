@@ -1,0 +1,13 @@
+{
+    "providers":
+    [
+        {"type": "bitmap", "file": "gui/case_preview.png", "ascent": 13, "height": 256, "chars": ["abc"]},
+        {"type": "bitmap", "file": "gui/inventory.png", "ascent": 13, "height": 256, "chars": ["d"]},
+        {"type": "bitmap", "file": "gui/profile.png", "ascent": 13, "height": 256, "chars": ["e"]},
+        {"type": "bitmap", "file": "gui/trading.png", "ascent": 13, "height": 256, "chars": ["f"]},
+        {"type": "bitmap", "file": "gui/marketplace.png", "ascent": 13, "height": 256, "chars": ["g"]},
+        {"type": "bitmap", "file": "gui/play_menu.png", "ascent": 13, "height": 256, "chars": ["h"]},
+        {"type": "bitmap", "file": "gui/voting.png", "ascent": 13, "height": 256, "chars": ["i"]}
+    ]
+
+}
