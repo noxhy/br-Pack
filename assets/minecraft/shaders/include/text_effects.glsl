@@ -503,15 +503,6 @@ bool applyTextEffects() {
         //INSERT TEXT EFFECTS HERE!
         //#####
 
-        // UI Text Color
-        TEXT_EFFECT( 64, 64, 64 )
-        {
-
-            override_text_color( rgb( 255, 255, 255 ) );
-
-        }
-
-
         // Health Bar
         TEXT_EFFECT( 77, 102, 24 )
         {
@@ -575,17 +566,6 @@ bool applyTextEffects() {
         }
 
 
-        // Golden Color
-        TEXT_EFFECT( 76, 64, 24 )
-        {
-
-            apply_iterating_movement();
-            apply_gold();
-            apply_outline( rgb( 120, 68, 0 ) );
-
-        }
-
-
         // Ammo Numbers
         TEXT_EFFECT( 230, 211, 255 )
         {
@@ -593,114 +573,6 @@ bool applyTextEffects() {
             textData.offset.x = 46.;
             override_text_color( vec4( 1., 1., 1., 0.8 ) );
             textData.stupidWorkaround = true;
-
-        }
-
-
-        // Timer
-        TEXT_EFFECT( 51, 31,  42 )
-        {
-
-            override_text_color( rgb( 255, 255, 255 ) );
-            remove_text_shadow();
-
-        }
-
-
-        // Timer Background
-        TEXT_EFFECT( 51, 43, 30 )
-        {
-
-            override_text_color( vec4( 0., 0., 0., 0.4 ) );
-            remove_text_shadow();
-
-        }
-
-
-        // Kill Cards
-        TEXT_EFFECT( 112, 94, 48 )
-        {
-
-            remove_text_shadow();
-            override_text_color( rgb( 255, 255, 255 ) );
-            textData.offset.x = -18.;
-            apply_shimmer(1.0, 0.35, rgb(255,255,255));
-
-        }
-
-        // CT Score Number
-        TEXT_EFFECT( 48, 35, 51 )
-        {
-
-            textData.offset = vec2( -9. - 8., 14. );
-            override_text_color( vec4( 0.15, 0.87, 0.51, 1. ) );
-            apply_outline( vec3( 0.15, 0.87, 0.51 ) * 0.25 );
-            apply_shimmer(0.5, 0.25, rgb(255,255,255));
-            remove_text_shadow();
-
-        }
-
-        // T Score Number
-        TEXT_EFFECT( 51, 35, 42 )
-        {
-
-            textData.offset = vec2( 7. + 8., 14. );
-            override_text_color( vec4( 0.92, 0.3, 0.4, 1. ) );
-            apply_outline( vec3( 0.92, 0.3, 0.4 ) * 0.25 );
-            apply_shimmer(0.5, 0.25, rgb(255,255,255));
-            remove_text_shadow();
-
-        }
-
-        // Swap Characters
-        TEXT_EFFECT( 51, 51, 56 )
-        {
-
-            apply_gradient(rgb(198, 173, 255), rgb(162, 109, 255));
-            apply_outline(vec3(0.63, 0.42, 1.0) * 0.25);
-
-        }
-
-        // Swap Characters Cooler
-        TEXT_EFFECT( 51, 51, 60 )
-        {
-
-            apply_flipping_movement(1.0, 1.0, 1.0 / 256.0);
-            apply_gradient(rgb(198, 173, 255), rgb(162, 109, 255));
-            apply_outline(vec3(0.63, 0.42, 1.0) * 0.25);
-
-        }
-
-
-        // Sticker Shimmer
-        TEXT_EFFECT( 51, 31, 64 )
-        {
-
-            apply_shimmer();
-            apply_gradient(rgb(198, 173, 255), rgb(162, 109, 255));
-            apply_outline(vec3(0.63, 0.42, 1.0) * 0.25);
-
-        }
-
-
-        // Sticker Jumping
-        TEXT_EFFECT( 51, 31, 68 )
-        {
-
-            apply_iterating_movement();
-            apply_gradient(rgb(175, 180, 255), rgb(84, 93, 255));
-            apply_outline(vec3(0.33, 0.36, 1.0) * 0.25);
-
-        }
-
-
-        // Sticker Flipping
-        TEXT_EFFECT( 51, 31, 72 )
-        {
-
-            apply_flipping_movement(1.0, 1.0, 1.0 / 256.0);
-            apply_gradient(rgb(255, 181, 192), rgb(255, 76, 103));
-            apply_outline(vec3(1.0, 0.3, 0.4) * 0.25);
 
         }
 
