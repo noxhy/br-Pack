@@ -519,7 +519,7 @@ bool applyTextEffects() {
         {
 
             textData.offset = vec2( -182, -82 );
-            override_text_color( rgb( 255, 255 ,255 ) );
+            override_text_color( rgb(255, 255, 255) );
             remove_text_shadow();
 
         }
