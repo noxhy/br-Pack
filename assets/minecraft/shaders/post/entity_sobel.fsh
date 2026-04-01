@@ -30,10 +30,6 @@ bool isColor(vec4 originColor, vec3 color) {
 void main(){
     fragColor = texture(InSampler, texCoord);
 
-    if (isColor(fragColor, LIGHT_PURPLE)) {fragColor.a = 0.2;}
-    if (isColor(fragColor, DARK_PURPLE)) {fragColor.rgba = vec4(0.6, 0.0, 0.4, 0.7);}
-    if (isColor(fragColor, WHITE)) {fragColor.a = 0.2;}
-
     if (isColor(fragColor, FLASH)) {fragColor.rgb = vec3(1.,1.,1.);}
     if (isColor(fragColor, VEIL))
     {
@@ -47,7 +43,7 @@ void main(){
     // DO NOT UNCOMMENT ITS THE SEIZURE ANTI F1
     // if (isColor(fragColor, FLASH)) {fragColor.rgb *= mod(GameTime * 1000., 2);}
 
-    if (isColor(fragColor,TEAM_CT) || isColor(fragColor,TEAM_T) || isColor(fragColor,TEAM_DM) || isColor(fragColor, GOLD) || isColor(fragColor, LIME) || isColor(fragColor, RED))
+    if !(isColor(fragColor, VEIL))
     {
 
         vec4 center = texture(InSampler, texCoord);

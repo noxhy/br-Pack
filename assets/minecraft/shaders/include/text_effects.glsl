@@ -484,10 +484,6 @@ void apply_armor() {
     textData.color.rgb = hsvToRgb( vec3( ( sin( GameTimeSeconds * -2.5 + textData.position.x * 30. ) -15. ) / 36., 0.73, 0.80 ) );
 }
 
-void apply_health() {
-    textData.color.rgb = hsvToRgb( vec3( ( sin( GameTimeSeconds * -2.5 + textData.position.x * 30. ) -0.5 ) / 64., 0.73, 0.80 ) );
-}
-
 #define TEXT_EFFECT(r, g, b) return true; case ((uint(r/4) << 16) | (uint(g/4) << 8) | (uint(b/4))):
 
 bool applyTextEffects() { 
@@ -508,7 +504,7 @@ bool applyTextEffects() {
         {
 
             textData.offset = vec2( -182, -82 );
-            apply_health();
+            override_text_color(rgb(255, 255, 255));
             remove_text_shadow();
 
         }
