@@ -2,7 +2,7 @@
   "providers": [
     {
       "type": "bitmap",
-      "file": "font/bar/bar.png",
+      "file": "font/bar/shield_bar.png",
       "ascent": 12,
       "height": 12,
       "chars": [
