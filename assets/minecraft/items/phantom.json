@@ -1,7 +1,7 @@
 {
     "model": {
         "type": "minecraft:model",
-        "model": "minecraft:item/guns/phantom/phantom",
+        "model": "minecraft:item/guns/phantom/phantom_future",
         "tints": [
             {
                 "type": "minecraft:dye",

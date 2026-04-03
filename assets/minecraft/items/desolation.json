@@ -1,7 +1,7 @@
 {
     "model": {
         "type": "minecraft:model",
-        "model": "minecraft:item/guns/desolation/desolation",
+        "model": "minecraft:item/guns/desolation/desolation_future",
         "tints": [
             {
                 "type": "minecraft:dye",
