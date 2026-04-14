@@ -1,0 +1,23 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "item/bullets/medium_ammo",
+		"particle": "item/bullets/medium_ammo"
+	},
+	"elements": [
+		{
+			"from": [7, 6, 4],
+			"to": [9, 8, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 6, 4]},
+			"faces": {
+				"north": {"uv": [4, 4, 6, 6], "texture": "#0"},
+				"east": {"uv": [0, 0, 7, 2], "texture": "#0"},
+				"south": {"uv": [4, 6, 6, 8], "texture": "#0"},
+				"west": {"uv": [0, 2, 7, 4], "texture": "#0"},
+				"up": {"uv": [2, 11, 0, 4], "texture": "#0"},
+				"down": {"uv": [4, 4, 2, 11], "texture": "#0"}
+			}
+		}
+	]
+}
