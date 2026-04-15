@@ -1,0 +1,14 @@
+{
+	"format_version": "1.21.11",
+	"parent": "item/guns/deadlock/deadlock",
+	"display": {
+		"firstperson_righthand": {
+			"rotation": [24.51, 31.68, -40.02],
+			"translation": [2.75, 7.25, -4.25]
+		},
+		"firstperson_lefthand": {
+			"rotation": [24.51, 31.68, -40.02],
+			"translation": [2.75, 7.25, -4.25]
+		}
+	}
+}
