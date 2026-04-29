@@ -480,6 +480,14 @@ void apply_gold() {
     textData.color.rgb = hsvToRgb( vec3( ( 0.11 + ( sin( ( ( GameTimeSeconds * 1.2 + ( textData.position.x / 1000. ) * -25 ) / 2.5 ) * 12.5 ) ) * 0.02 ) , 0.57, 1. ) );
 }
 
+void apply_armor() {
+    textData.color.rgb = hsvToRgb( vec3( ( sin( GameTimeSeconds * -2.5 + textData.position.x * 30. ) -15. ) / 36., 0.73, 0.80 ) );
+}
+
+void apply_health() {
+    textData.color.rgb = hsvToRgb( vec3( ( sin( GameTimeSeconds * -2.5 + textData.position.x * 30. ) -0.5 ) / 64., 0.73, 0.80 ) );
+}
+
 #define TEXT_EFFECT(r, g, b) return true; case ((uint(r/4) << 16) | (uint(g/4) << 8) | (uint(b/4))):
 
 bool applyTextEffects() { 
@@ -500,19 +508,29 @@ bool applyTextEffects() {
         {
 
             textData.offset = vec2( -182, -82 );
-            override_text_color(rgb(255, 255, 255));
+            apply_health();
             remove_text_shadow();
 
         }
 
 
         // Health Bar Background
-        TEXT_EFFECT( 77, 102, 22 ) 
+        TEXT_EFFECT( 77, 102, 22 )
         {
 
             textData.offset = vec2( -182, -82 );
-            override_text_color(rgb(255, 255, 255));
+            override_text_color( rgb(255, 255, 255) );
             remove_text_shadow();
+
+        }
+
+        // Health Bar Numbers
+        TEXT_EFFECT( 77, 102, 28 )
+        {
+
+            textData.offset = vec2( -134, -78 );
+            override_text_color( vec4( 1., 0.9, 0.9, 0.65 ) );
+            remove_text_shadow(); 
 
         }
 
@@ -520,8 +538,8 @@ bool applyTextEffects() {
         TEXT_EFFECT( 51, 22, 6 )
         {
 
-            textData.offset = vec2(-182, -62);
-            override_text_color(rgb(255, 255, 255));
+            textData.offset = vec2( 22, -82 );
+            apply_armor();
             remove_text_shadow();
 
         }
@@ -530,8 +548,19 @@ bool applyTextEffects() {
         TEXT_EFFECT( 51, 22, 10 )
         {
 
-            textData.offset = vec2(-182, -62);
-            override_text_color(rgb(255, 255, 255));
+            textData.offset = vec2( 22, -82 );
+            override_text_color( rgb( 255, 255 ,255 ) );
+            remove_text_shadow();
+
+        }
+
+
+        // Armor Bar Numbers
+        TEXT_EFFECT( 51, 22, 12 )
+        {
+
+            textData.offset = vec2( 70, -78 );
+            override_text_color( vec4( 0.9, 0.9, 1., 0.65 ) );
             remove_text_shadow();
 
         }
@@ -695,7 +724,7 @@ bool applySpheyaPack9() {
     if(textData.stupidWorkaround) {
 
         vec2 center = getCenter( Sampler2, gl_VertexID % 4 );
-        center.y /= ScreenSize.y / gui_scale * 1.;
+        center.y /= ScreenSize.y / (gui_scale * 16.);
         gl_Position.y = 0.-center.y-( gui_scale * 46.5 ) / ScreenSize.y;
 
     }

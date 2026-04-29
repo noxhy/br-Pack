@@ -1,16 +1,48 @@
 {
-    "model": {
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:display_context",
+    "cases": [
+      {
+        "when": ["head", "gui", "ground", "fixed", "on_shelf"],
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/guns/ravager/ravager"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:select",
+      "property": "minecraft:custom_model_data",
+      "cases": [
+        {
+          "when": ["equip"],
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/guns/ravager/ravager_equip"
+          }
+        },
+        {
+          "when": ["reload"],
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/guns/ravager/ravager_reload"
+          }
+        },
+        {
+          "when": ["firing"],
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/guns/ravager/ravager_firing"
+          }
+        }
+      ],
+      "fallback": {
         "type": "minecraft:model",
-        "model": "minecraft:item/guns/ravager/ravager_future",
-        "tints": [
-            {
-                "type": "minecraft:dye",
-                "default": [
-                    1,
-                    1,
-                    1
-                ]
-            }
-        ]
+        "model": "minecraft:item/guns/ravager/ravager"
+      }
     }
+  },
+  "swap_animation_scale": 0,
+  "hand_animation_on_swap": false
 }

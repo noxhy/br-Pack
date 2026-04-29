@@ -1,14 +1,17 @@
 {
 	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
 	"parent": "item/guns/deadlock/deadlock",
 	"display": {
 		"firstperson_righthand": {
-			"rotation": [16.75, 0, 0],
-			"translation": [0, 7.75, -1.25]
+			"rotation": [24.75, 0, 0],
+			"translation": [0, 7.5, 2],
+			"scale": [1.14258, 1.14258, 1.14258]
 		},
 		"firstperson_lefthand": {
-			"rotation": [16.75, 0, 0],
-			"translation": [0, 7.75, -1.25]
+			"rotation": [24.75, 0, 0],
+			"translation": [0, 7.5, 2],
+			"scale": [1.14258, 1.14258, 1.14258]
 		}
 	}
 }

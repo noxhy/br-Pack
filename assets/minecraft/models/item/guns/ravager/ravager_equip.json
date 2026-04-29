@@ -1,0 +1,15 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"parent": "item/guns/ravager/ravager",
+	"display": {
+		"firstperson_righthand": {
+			"rotation": [-18, 3.75, 0],
+			"translation": [0, 2.25, -4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-18, 3.75, 0],
+			"translation": [0, 2.25, -4]
+		}
+	}
+}
