@@ -1,0 +1,46 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "models": [],
+    "property": "minecraft:custom_model_data",
+    "entries": [
+      {
+        "threshold": 0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/crates/ammo_box_empty"
+        }
+      },
+      {
+        "threshold": 1,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/crates/ammo_box_1"
+        }
+      },
+      {
+        "threshold": 2,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/crates/ammo_box_empty_2"
+        }
+      },
+      {
+        "threshold": 3,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/crates/ammo_box_3"
+        }
+      },
+      {
+        "threshold": 4,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/crates/ammo_box_full"
+        }
+      }
+    ]
+  },
+  "oversized_in_gui": true,
+  "swap_animation_scale": 1
+}
